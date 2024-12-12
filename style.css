@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+.balance, .income-expense, .add-transaction, .transaction-history {
+    margin-bottom: 20px;
+}
+
+.balance div, .income-expense div {
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#balance {
+    font-size: 2em;
+}
+
+.income-expense {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-transaction form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-transaction input, .add-transaction button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-transaction button {
+    background: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.transaction-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.transaction-history li {
+    background: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid green;
+    animation: fadeIn 0.5s;
+}
+
+.transaction-history li.expense {
+    border-left: 5px solid red;
+}
+
+.transaction-history button {
+    float: right;
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
